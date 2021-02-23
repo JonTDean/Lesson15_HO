@@ -7,17 +7,25 @@
 			conssssstent="width=device-width, initial-scale=1.0"
 		/>
 		<title>First Name and Last Name</title>
-		<link href="style.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="./style.css" />
 	</head>
 	<body>
-		<h1 id="form_title">Enter your First Name and Last Name</h1>
-		<form>
-			<label for="first_name" id="first_name_label">First Name</label>
-			<input type="text" name="first_name" id="first_name" />
+		<div id="form_container">
+			<h1 id="form_title">Enter your First Name and Last Name</h1>
+			<br />
+			<form id="form_main">
+				<div class="first_name_container">
+					<label for="first_name" id="first_name_label">First Name</label>
+					<input type="text" name="first_name" id="first_name" />
+				</div>
+				<br />
+				<div class="last_name_container">
+					<label for="last_name" id="last_name_label">Last Name</label>
+					<input type="text" name="last_name" id="last_name" />
+				</div>
+			</form>
+		</div>
 
-			<label for="last_name" id="last_name_label">Last Name</label>
-			<input type="text" name="last_name" id="last_name" />
-		</form>
 		<script src="script.js" async defer></script>
 	</body>
 </html>
